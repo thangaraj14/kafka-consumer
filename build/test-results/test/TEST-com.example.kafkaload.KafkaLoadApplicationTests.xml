@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.kafkaload.KafkaLoadApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-02T04:50:34" hostname="talagarsamXMD6R.vmware.com" time="0.474">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.kafkaload.KafkaLoadApplicationTests" time="0.474"/>
+  <system-out><![CDATA[04:50:30.931 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+04:50:30.943 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+04:50:30.979 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.kafkaload.KafkaLoadApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+04:50:30.990 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.kafkaload.KafkaLoadApplicationTests], using SpringBootContextLoader
+04:50:30.994 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.kafkaload.KafkaLoadApplicationTests]: class path resource [com/example/kafkaload/KafkaLoadApplicationTests-context.xml] does not exist
+04:50:30.995 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.kafkaload.KafkaLoadApplicationTests]: class path resource [com/example/kafkaload/KafkaLoadApplicationTestsContext.groovy] does not exist
+04:50:30.995 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.kafkaload.KafkaLoadApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+04:50:30.996 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.kafkaload.KafkaLoadApplicationTests]: KafkaLoadApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04:50:31.040 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.kafkaload.KafkaLoadApplicationTests]
+04:50:31.103 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/talagarsamy/Projects/kafka-load/build/classes/java/main/com/example/kafkaload/KafkaLoadApplication.class]
+04:50:31.104 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.kafkaload.KafkaLoadApplication for test class com.example.kafkaload.KafkaLoadApplicationTests
+04:50:31.234 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.kafkaload.KafkaLoadApplicationTests]: using defaults.
+04:50:31.234 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+04:50:31.258 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@70e659aa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@615f972, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@285f09de, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@73393584, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@31500940, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1827a871, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48e64352, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7249dadf, org.springframework.test.context.event.EventPublishingTestExecutionListener@4362d7df, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66238be2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1c25b8a7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@200606de, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@750fe12e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@f8908f6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3e587920]
+04:50:31.262 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@425357dd testClass = KafkaLoadApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2102a4d5 testClass = KafkaLoadApplicationTests, locations = '{}', classes = '{class com.example.kafkaload.KafkaLoadApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5d1659ea, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@625abb97, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55342f40, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2a2c13a8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3a3e4aff, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@36804139], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.12)
+
+2023-07-02 04:50:31.613  INFO 23048 --- [    Test worker] c.e.kafkaload.KafkaLoadApplicationTests  : Starting KafkaLoadApplicationTests using Java 11.0.16.1 on talagarsamXMD6R.vmware.com with PID 23048 (started by talagarsamy in /Users/talagarsamy/Projects/kafka-load)
+2023-07-02 04:50:31.615  INFO 23048 --- [    Test worker] c.e.kafkaload.KafkaLoadApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-07-02 04:50:33.924  INFO 23048 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-02 04:50:34.040  INFO 23048 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9088]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-rr-group-id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-rr-group-id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_committed
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 600000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RoundRobinAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-07-02 04:50:34.160  INFO 23048 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-07-02 04:50:34.162  INFO 23048 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-07-02 04:50:34.162  INFO 23048 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1688273434159
+2023-07-02 04:50:34.203  INFO 23048 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Subscribed to topic(s): kafka-rr
+2023-07-02 04:50:34.224  INFO 23048 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9088]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-rr-group-id-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-rr-group-id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_committed
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 600000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RoundRobinAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-07-02 04:50:34.241  INFO 23048 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-07-02 04:50:34.242  INFO 23048 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-07-02 04:50:34.242  INFO 23048 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1688273434241
+2023-07-02 04:50:34.252  INFO 23048 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Subscribed to topic(s): kafka-rr
+2023-07-02 04:50:34.268  INFO 23048 --- [    Test worker] c.e.kafkaload.KafkaLoadApplicationTests  : Started KafkaLoadApplicationTests in 2.954 seconds (JVM running for 4.367)
+2023-07-02 04:50:34.597  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-0 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.597  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-0 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.598  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-5 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.598  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-5 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.598  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-8 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.598  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-8 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.598  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-2 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.598  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-2 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-9 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-9 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-1 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-1 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-4 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-4 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-6 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-7 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-6 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-3 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.599  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-7 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.600  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Resetting the last seen epoch of partition kafka-rr-3 to 0 since the associated topicId changed from null to RQFqqClQRiGpNNYGMPFASA
+2023-07-02 04:50:34.602  INFO 23048 --- [ntainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Cluster ID: K-RvshAdSJqDXyfzTWR54Q
+2023-07-02 04:50:34.602  INFO 23048 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Cluster ID: K-RvshAdSJqDXyfzTWR54Q
+2023-07-02 04:50:34.603  INFO 23048 --- [ntainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Discovered group coordinator localhost:9088 (id: 2147483646 rack: null)
+2023-07-02 04:50:34.603  INFO 23048 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Discovered group coordinator localhost:9088 (id: 2147483646 rack: null)
+2023-07-02 04:50:34.607  INFO 23048 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] (Re-)joining group
+2023-07-02 04:50:34.607  INFO 23048 --- [ntainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] (Re-)joining group
+2023-07-02 04:50:34.624  INFO 23048 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] Request joining group due to: need to re-join with the given member-id
+2023-07-02 04:50:34.624  INFO 23048 --- [ntainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] Request joining group due to: need to re-join with the given member-id
+2023-07-02 04:50:34.625  INFO 23048 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-rr-group-id-1, groupId=kafka-rr-group-id] (Re-)joining group
+2023-07-02 04:50:34.625  INFO 23048 --- [ntainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-rr-group-id-2, groupId=kafka-rr-group-id] (Re-)joining group
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

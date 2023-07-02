@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-load-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kafka-load
+  template:
+    metadata:
+      labels:
+        app: kafka-load
+    spec:
+      containers:
+      - name: kafka-load-container
+        image: kafka-load:tag
+        ports:
+        - containerPort: 8080
