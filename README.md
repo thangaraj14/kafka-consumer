@@ -30,6 +30,11 @@ cmd :
 
 check : docker images
 
+## Running it using Kubernetes
+
+❯ minikube start hyperkit
+❯ kubectl apply -f kafka-consumer-deployment.yaml
+
 ## To track Kafka consumer group-id
 
 /usr/local/Cellar/kafka/3.4.0/libexec/bin                                                                                       
